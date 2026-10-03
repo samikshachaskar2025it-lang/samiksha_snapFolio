@@ -1,0 +1,15 @@
+Contact form database setup
+
+This form stores messages in MySQL or MariaDB. Create a database and database
+user in your hosting control panel, then run schema.sql in that database.
+
+Configure these environment variables for the PHP site:
+
+DB_HOST     Database server host
+DB_NAME     Database name
+DB_USER     Database username
+DB_PASSWORD Database password
+
+Set the values in your hosting provider's private environment/configuration
+settings. Do not put database passwords in index.html, contact.php, or a public
+repository. The form saves only messages submitted through the contact form.
